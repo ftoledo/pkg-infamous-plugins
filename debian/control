@@ -2,8 +2,8 @@ Source: infamous-plugins
 Section: sound
 Priority: optional
 Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
-Build-Depends: debhelper (>= 10), 
-    cmake (>=3.13), 
+Build-Depends: debhelper (>= 12),
+    cmake (>=3.13),
     lv2-dev,
     libzita-resampler-dev (>= 1.6),
     libfftw3-dev (>= 3.3.8),
@@ -12,13 +12,14 @@ Standards-Version: 4.5.1
 Homepage: https://github.com/ssj71/infamousPlugins
 Vcs-Git: https://github.com/ftoledo/pkg-infamous-plugins
 Vcs-Browser: https://github.com/ftoledo/pkg-infamous-plugins
+Rules-Requires-Root: no
 
 Package: infamous-plugins
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends},
-Description:  Infamous collection of open-source LV2 plugins
- These are audio plugins in the LV2 format, developed for GNU/Linux. 
- Most are suitable for live use (exceptions are noted in the 
+Description: Infamous collection of open-source LV2 plugins
+ These are audio plugins in the LV2 format, developed for GNU/Linux.
+ Most are suitable for live use (exceptions are noted in the
  description).
  .
  1b. Infamous-rule
