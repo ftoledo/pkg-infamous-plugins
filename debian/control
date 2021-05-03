@@ -1,0 +1,38 @@
+Source: infamous-plugins
+Section: sound
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 10), 
+    cmake (>=3.13), 
+    lv2-dev,
+    libzita-resampler-dev (>= 1.6),
+    libfftw3-dev (>= 3.3.8),
+    libcairo2-dev (>= 1.16)
+Standards-Version: 4.5.1
+Homepage: https://github.com/ssj71/infamousPlugins
+Vcs-Git: https://github.com/ftoledo/pkg-infamous-plugins
+Vcs-Browser: https://github.com/ftoledo/pkg-infamous-plugins
+
+Package: infamous-plugins
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends},
+Description:  Infamous collection of open-source LV2 plugins
+ These are audio plugins in the LV2 format, developed for GNU/Linux. 
+ Most are suitable for live use (exceptions are noted in the 
+ description).
+ .
+ 1b. Infamous-rule
+ 2.  Envelope Follower
+ 2b. Envelope Follower CV
+ 3.  Hip2B
+ 4.  Cheap distortion
+ 5.  Stuck
+ 5b. Stuck stacker
+ 6.  Power cut
+ 7.  Power up
+ 8.  Ewham
+ 9.  Duffer
+ 10. Lushlife
+ 11. Playback modulation shifter
+ 12. Mindi
+ 13. Octolo
